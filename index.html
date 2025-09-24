@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StyleShop - Moda e Estilo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <button id="menuToggle" class="hamburger" aria-label="Menu Mobile">
+        <span></span><span></span><span></span>
+      </button>
+      <h1 class="logo">StyleShop</h1>
+      <nav class="nav-links" id="navLinks">
+        <a href="#roupas">Roupas</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#tenis">Tênis</a>
+        <a href="carrinho.html">Carrinho <span id="cartCount">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Estilo que te acompanha</h2>
+      <p>Descubra as últimas tendências em roupas, acessórios e tênis.</p>
+      <a href="#produtos" class="btn">Ver produtos</a>
+    </section>
+
+    <section id="produtos" class="produtos-grid"></section>
+  </main>
+
+  <footer>
+    <p>Endereço: Rua Exemplo, 123 - Centro - Cidade - Estado</p>
+  </footer>
+
+
+  <div id="alerta" class="alerta">Produto adicionado ao carrinho</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
