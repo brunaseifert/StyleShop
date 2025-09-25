@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StyleShop - Moda e Estilo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <button id="menuToggle" class="hamburger" aria-label="Menu Mobile">
+        <span></span><span></span><span></span>
+      </button>
+      <h1 class="logo">StyleShop</h1>
+      <nav class="nav-links" id="navLinks">
+        <a href="#pesquisar" aria-label="Pesquisar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#quadros">Quadros</a>
+        <a href="carrinho.html" aria-label="Carrinho">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61l1.6-8.39H6" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+          Carrinho <span id="cartCount">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Estilo que te acompanha</h2>
+      <p>Descubra as últimas tendências em roupas, acessórios e tênis.</p>
+      <a href="#produtos" class="btn">Ver produtos</a>
+    </section>
+
+
+
+        <div id="categoriaDetalhe" class="categoria-detalhe" style="display:none;">
+          <button id="voltarBtn" class="btn-voltar">← Voltar</button>
+          <h3 id="categoriaTitulo"></h3>
+          <ul id="opcoesLista"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos-grid"></section>
+
+    <section class="categorias">
+      <h2>Compre por Categoria</h2>
+
+      <div class="categorias-container">
+        <div id="categoriaGrid" class="categoria-grid">
+          <div class="categoria" data-id="canecas">Estampa Canecas</div>
+          <div class="categoria" data-id="camisas">Estampa Camisa</div>
+          <div class="categoria" data-id="quadros">Quadros Decorativos</div>
+          <div class="categoria" data-id="chaveiros">Chaveiros</div>
+        </div>
+
+  </main>
+
+  <footer>
+    <p>Endereço: Rua Exemplo, 123 - Centro - Cidade - Estado</p>
+  </footer>
+
+  <div id="alerta" class="alerta">Produto adicionado ao carrinho</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StyleShop - Carrinho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <button id="menuToggle" class="hamburger" aria-label="Menu Mobile">
+        <span></span><span></span><span></span>
+      </button>
+      <h1 class="logo">StyleShop</h1>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="index.html#quadros">Quadros</a>
+        <a href="index.html#acessorios">Acessórios</a>
+        <a href="index.html#tenis">Tênis</a>
+            <a href="carrinho.html" aria-label="Carrinho">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61l1.6-8.39H6" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+          Carrinho <span id="cartCount">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="carrinho">
+      <h2>Seu Carrinho</h2>
+      <div id="cartItems" class="produtos-grid"></div>
+      <div class="cart-summary">
+        <p id="cartTotal">Total: R$ 0,00</p>
+        <a id="finalizeBtn" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Finalizar Compra</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
