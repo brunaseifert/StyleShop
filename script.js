@@ -6,9 +6,15 @@ menuToggle?.addEventListener('click', () => {
 });
 
 const produtos = [
+<<<<<<< HEAD
   { nome: 'Camisa Tokio Revengers', preco: 'R$ 89,90', imagem: 'assets/camisa naruto.jpeg' },
   { nome: 'Caneca Jujutsu-kaisen', preco: 'R$ 149,90', imagem: 'assets/caneca naruto.jpeg' },
   { nome: 'Tênis Branco', preco: 'R$ 199,90', imagem: 'assets/caneca one 1 1.jpeg' }
+=======
+  { nome: 'Camisa Estampada', preco: 'R$ 89,90', imagem: 'assets/camisa.jpg' },
+  { nome: 'Bolsa Casual', preco: 'R$ 149,90', imagem: 'assets/bolsa.jpg' },
+  { nome: 'Tênis Branco', preco: 'R$ 199,90', imagem: 'assets/tenis.jpg' }
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
 ];
 
 function precoParaNumero(preco) {
@@ -37,10 +43,14 @@ function atualizarContador() {
 
 function mostrarAlerta(mensagem) {
   const alerta = document.getElementById('alerta');
+<<<<<<< HEAD
   if (!alerta) {
     console.log(mensagem);
     return;
   }
+=======
+  if (!alerta) return;
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
   alerta.textContent = mensagem;
   alerta.classList.add('mostrar');
   setTimeout(() => {
@@ -52,8 +62,11 @@ function renderizarProdutos() {
   const grid = document.getElementById('produtos');
   if (!grid) return;
 
+<<<<<<< HEAD
   grid.innerHTML = '';
 
+=======
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
   produtos.forEach(produto => {
     const card = document.createElement('div');
     card.className = 'produto';
@@ -106,7 +119,10 @@ function renderizarCarrinho() {
   carrinho.forEach((item, index) => {
     const card = document.createElement('div');
     card.className = 'produto';
+<<<<<<< HEAD
     card.style.position = 'relative';
+=======
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
     card.innerHTML = `
       <img src="${item.imagem}" alt="${item.nome}" />
       <h3>${item.nome}</h3>
@@ -121,8 +137,12 @@ function renderizarCarrinho() {
 
   cartTotal.textContent = `Total: ${numeroParaPreco(total)}`;
   mensagem += `Total: ${numeroParaPreco(total)}`;
+<<<<<<< HEAD
 
   finalizeBtn.href = `https://wa.me/11970128962?text=${mensagem}`;
+=======
+  finalizeBtn.href = `https://wa.me/55SEUNUMERO?text=${mensagem}`; // troque SEUNUMERO pelo seu número
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
 
   document.querySelectorAll('.btn-excluir').forEach(btn => {
     btn.addEventListener('click', e => {
@@ -136,6 +156,7 @@ function renderizarCarrinho() {
   });
 }
 
+<<<<<<< HEAD
 // --- CATEGORIAS COM IMAGENS DINÂMICAS ---
 const categorias = {
   canecas: ['Caneca 1', 'Caneca 2', 'Caneca 3'],
@@ -188,6 +209,8 @@ if (categoriaGrid && categoriaDetalhe && categoriaTitulo && opcoesLista && volta
     categoriaDetalhe.style.display = 'none';
   });
 }
+=======
+>>>>>>> a2456aa7857403f990a88b42374b54adf9b62a23
 
 if (document.getElementById('cartItems')) {
   renderizarCarrinho();
