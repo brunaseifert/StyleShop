@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StyleShop - Moda e Estilo</title>
+   <meta name="author" content="Front-end desenvolvido por Bruna Seifert © 2025" />
+  <title>StyleShop</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,14 +15,18 @@
       </button>
       <h1 class="logo">StyleShop</h1>
       <nav class="nav-links" id="navLinks">
-        <a href="#pesquisar" aria-label="Pesquisar">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
-            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"/>
-          </svg>
-        </a>
-        <a href="#acessorios">Acessórios</a>
-        <a href="#quadros">Quadros</a>
+
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Buscar produto..." aria-label="Buscar produto" autocomplete="off" />
+          <button id="searchButton" aria-label="Buscar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+            </svg>
+          </button>
+          <ul id="suggestions" class="suggestions" role="listbox" aria-label="Sugestões de produtos"></ul>
+        </div>
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
         <a href="carrinho.html" aria-label="Carrinho">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -30,6 +35,7 @@
           </svg>
           Carrinho <span id="cartCount">0</span>
         </a>
+        
       </nav>
     </div>
   </header>
@@ -37,15 +43,18 @@
   <main>
     <section class="hero">
       <h2>Estilo que te acompanha</h2>
-      <p>Descubra as últimas tendências em roupas, acessórios e tênis.</p>
+      <p>Explore produtos feitos para você: canecas, acessórios, quadros e muito mais.</p>
       <a href="#produtos" class="btn">Ver produtos</a>
     </section>
 
+    <!-- Carousel horizontal com arraste -->
+    <section id="carouselSection" class="carousel-section">
+      <div class="container"></div>
+      <div id="carousel" class="carousel" aria-label="Galeria de produtos"></div>
+    </section>
 
- <section id="produtos" class="produtos-grid"></section>
+    <section id="produtos" class="produtos-grid"></section>
   </main>
-
-</section>
 
   <footer>
     <p>Endereço: Rua Exemplo, 123 - Centro - Cidade - Estado</p>
